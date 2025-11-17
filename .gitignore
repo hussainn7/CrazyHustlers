@@ -7,9 +7,13 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependencies
+node_modules/
+/node_modules
+
+# Build outputs
+dist/
+dist-ssr/
 *.local
 
 # Editor directories and files
@@ -28,4 +32,9 @@ dist-ssr
 .env.local
 .env.production.local
 .env.development.local
+
+# Large media files (videos)
+public/videos/*.mp4
+public/videos/*.mov
+public/videos/*.avi
 

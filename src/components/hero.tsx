@@ -11,35 +11,18 @@ export function Hero({ onStartQuiz }: HeroProps) {
     <section className="relative h-[85vh] overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 bg-neutral-900">
-        {/* Placeholder for video - replace with actual video URL */}
-        <div className="absolute inset-0 bg-gradient-to-br from-neutral-800 via-neutral-700 to-neutral-900" />
-        {/* 
-          To add a real video:
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/path-to-your-video.mp4" type="video/mp4" />
-          </video>
-        */}
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/3209571-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+        </video>
         
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
-        
-        {/* Animated placeholder - simulating people helping */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <motion.div
-            className="text-neutral-600 text-9xl"
-            initial={{ opacity: 0.3 }}
-            animate={{ opacity: [0.3, 0.5, 0.3] }}
-            transition={{ duration: 3, repeat: Infinity }}
-          >
-            <Users className="w-64 h-64" strokeWidth={0.5} />
-          </motion.div>
-        </div>
       </div>
 
       {/* Content Overlay */}
